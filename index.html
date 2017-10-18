@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ajax API CRUD </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+  <!-- todo: remove the CDN and download the actual files -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="js/ajax.js"></script>
+  <script type="text/javascript" src="js/ajax-delete.js"></script>
+  <link rel="stylesheet" href="css/simple.css">
+  
+  
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">  <!-- side menu -->
+      <h4>client's list</h4>
+      <i>"to start please click on `Get Clients List` "</i>
+      <ul class="nav nav-pills nav-stacked">
+        <!-- <li class="active"><a href="#section1">Home</a></li> -->
+      </ul><br>
+        <button type="button" id="read" class="btn btn-success">Get Clients List</button>
+        <hr>
+        <div>
+          <center>
+          <form>
+                <input type="text" class="form-control" required id="first_name" name="first_name" placeholder="First name">
+                <input type="text" class="form-control" required id="last_name" name="last_name" placeholder="Last name">
+                <input type="text" class="form-control" required id="email" name="email" placeholder="E-mail">
+                <input type="text" class="form-control" required id="address" name="address" placeholder="address">
+                <input type="text" class="form-control" required id="post_code" name="post_code" placeholder="post code">
+                <div id="error"></div>  <!--  for error display  -->
+                <button type="button" id="create" class="btn btn-primary">Insert</button> 
+    
+          </form>
+          </center>
+        </div>
+    </div> <!-- end of side menu -->
+
+    <div class="col-sm-9">
+      <div id="ul"></div>
+      <table id="records_table" class="table">
+        <tr>
+          <th>
+            first name
+          </th>
+          <th>
+            last name
+          </th>
+          <th>
+            email
+          </th>
+          <th>
+            address
+          </th>
+          <th>
+            post code
+          </th>
+          <th>
+            action
+          </th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
